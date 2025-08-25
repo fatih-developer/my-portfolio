@@ -1,1 +1,102 @@
-import { ContactData } from '@/types/contact';\n\nexport const contactData: ContactData = {\n  personal: {\n    name: 'Fatih Ünal',\n    title: 'Software Developer',\n    location: 'Istanbul, Turkey',\n    timezone: 'GMT+3',\n    profileImage: '/profile.jpg', // Placeholder, replace with actual image\n    welcomeMessage: 'I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.',\n  },\n  availability: {\n    status: 'available',\n    message: 'Currently available for new opportunities',\n    responseTime: 'Within 24 hours',\n    preferredHours: '9:00 AM - 6:00 PM (GMT+3)',\n    lastUpdated: '2025-08-25',\n  },\n  contact: {\n    email: {\n      primary: 'fatih.unal@example.com',\n      display: 'fatih.unal@example.com',\n      subject: 'Portfolio Contact',\n    },\n    phone: {\n      number: '+90 555 123 4567',\n      whatsapp: true,\n      display: '+90 555 123 4567',\n    },\n    social: [\n      {\n        platform: 'linkedin',\n        username: 'fatih-unal',\n        url: 'https://linkedin.com/in/fatih-unal',\n        verified: true,\n        icon: 'linkedin',\n        color: '#0077b5',\n      },\n      {\n        platform: 'github',\n        username: 'fatih-unal',\n        url: 'https://github.com/fatih-unal',\n        verified: true,\n        icon: 'github',\n        color: '#333333',\n      },\n      {\n        platform: 'twitter',\n        username: 'fatih_unal',\n        url: 'https://twitter.com/fatih_unal',\n        verified: false,\n        icon: 'twitter',\n        color: '#1da1f2',\n      },\n    ],\n    calendar: {\n      url: 'https://calendly.com/fatih-unal',\n      platform: 'calendly',\n      types: [\n        {\n          name: 'Coffee Chat',\n          duration: '30 minutes',\n          description: 'Quick introduction and informal chat',\n          url: 'https://calendly.com/fatih-unal/coffee-chat',\n        },\n        {\n          name: 'Project Discussion',\n          duration: '60 minutes',\n          description: 'Detailed project discussion or collaboration',\n          url: 'https://calendly.com/fatih-unal/project-discussion',\n        },\n      ],\n    },\n  },\n  preferences: {\n    primaryMethod: 'email',\n    businessHours: 'Monday - Friday, 9:00 AM - 6:00 PM (GMT+3)',\n    responseExpectation: 'I typically respond to emails within 24 hours during business days.',\n    inquiryTypes: [\n      {\n        type: 'job',\n        method: 'email',\n        note: 'For job opportunities, please include details about the role and company',\n      },\n      {\n        type: 'freelance',\n        method: 'email',\n        note: 'For freelance projects, please provide project scope and timeline',\n      },\n      {\n        type: 'collaboration',\n        method: 'email',\n        note: 'For collaboration opportunities, please share your idea and goals',\n      },\n      {\n        type: 'general',\n        method: 'email',\n        note: 'For all other inquiries, email is the best way to reach me',\n      },\n    ],\n  },\n};
+import { ContactData } from '@/types/contact';
+
+export const contactData: ContactData = {
+  personal: {
+    name: 'Fatih Ünal',
+    title: 'Software Developer',
+    location: 'Istanbul, Turkey',
+    timezone: 'GMT+3',
+    profileImage: '/profile.jpg', // Placeholder, replace with actual image
+    welcomeMessage: "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",
+  },
+  availability: {
+    status: 'available',
+    message: 'Currently available for new opportunities',
+    responseTime: 'Within 24 hours',
+    preferredHours: '9:00 AM - 6:00 PM (GMT+3)',
+    lastUpdated: '2025-08-25',
+  },
+  contact: {
+    email: {
+      primary: 'fatih.unal@example.com',
+      display: 'fatih.unal@example.com',
+      subject: 'Portfolio Contact',
+    },
+    phone: {
+      number: '+90 555 123 4567',
+      whatsapp: true,
+      display: '+90 555 123 4567',
+    },
+    social: [
+      {
+        platform: 'linkedin',
+        username: 'fatih-unal',
+        url: 'https://linkedin.com/in/fatih-unal',
+        verified: true,
+        icon: 'linkedin',
+        color: '#0077b5',
+      },
+      {
+        platform: 'github',
+        username: 'fatih-unal',
+        url: 'https://github.com/fatih-unal',
+        verified: true,
+        icon: 'github',
+        color: '#333333',
+      },
+      {
+        platform: 'twitter',
+        username: 'fatih_unal',
+        url: 'https://twitter.com/fatih_unal',
+        verified: false,
+        icon: 'twitter',
+        color: '#1da1f2',
+      },
+    ],
+    calendar: {
+      url: 'https://calendly.com/fatih-unal',
+      platform: 'calendly',
+      types: [
+        {
+          name: 'Coffee Chat',
+          duration: '30 minutes',
+          description: 'Quick introduction and informal chat',
+          url: 'https://calendly.com/fatih-unal/coffee-chat',
+        },
+        {
+          name: 'Project Discussion',
+          duration: '60 minutes',
+          description: 'Detailed project discussion or collaboration',
+          url: 'https://calendly.com/fatih-unal/project-discussion',
+        },
+      ],
+    },
+  },
+  preferences: {
+    primaryMethod: 'email',
+    businessHours: 'Monday - Friday, 9:00 AM - 6:00 PM (GMT+3)',
+    responseExpectation: 'I typically respond to emails within 24 hours during business days.',
+    inquiryTypes: [
+      {
+        type: 'job',
+        method: 'email',
+        note: 'For job opportunities, please include details about the role and company',
+      },
+      {
+        type: 'freelance',
+        method: 'email',
+        note: 'For freelance projects, please provide project scope and timeline',
+      },
+      {
+        type: 'collaboration',
+        method: 'email',
+        note: 'For collaboration opportunities, please share your idea and goals',
+      },
+      {
+        type: 'general',
+        method: 'email',
+        note: 'For all other inquiries, email is the best way to reach me',
+      },
+    ],
+  },
+};
