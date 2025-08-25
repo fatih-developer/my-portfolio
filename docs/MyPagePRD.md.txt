@@ -1,0 +1,64 @@
+### **1. Giriş**
+
+#### **1.1. Proje Özeti**
+Bu proje, bir yazılım geliştiricinin kişisel ve profesyonel kimliğini sergilediği, becerilerini, deneyimlerini ve projelerini sunduğu bir portfolyo web sitesi oluşturmayı amaçlamaktadır. Site, potansiyel işverenler, iş arkadaşları ve teknoloji meraklıları için bir iletişim ve bilgi kaynağı olacaktır.
+
+#### **1.2. Hedef Kitle**
+* Potansiyel işverenler ve işe alım uzmanları
+* Freelance iş arayan müşteriler
+* Sektördeki diğer yazılım geliştiriciler ve mentörler
+* Teknoloji meraklıları ve blog okuyucuları
+
+---
+
+### **2. Özellikler ve Fonksiyonellik**
+
+#### **2.1. Sayfalar**
+* **Ana Sayfa:** Kişisel bir karşılama mesajı, kısa bir biyografi ve en önemli becerilerin veya projelerin hızlı bir özeti.
+* **Hakkımda:** Detaylı özgeçmiş, profesyonel hedefler ve kişisel ilgi alanları.
+* **Portfolyo/Projeler:** Tamamlanan veya üzerinde çalışılan projelerin listesi. Her proje için ayrıntılı açıklama, kullanılan teknolojiler, görseller/videolar ve GitHub linkleri.
+* **Blog/Yazılar (Opsiyonel):** Teknik makaleler, öğrendiğim yeni bilgiler veya kişisel düşünceler.
+* **İletişim:** E-posta, LinkedIn, GitHub ve diğer sosyal medya hesaplarına linkler içeren bir iletişim formu.
+
+#### **2.2. Temel Fonksiyonlar**
+* **Duyarlı Tasarım (Responsive Design):** Web sitesi, masaüstü, tablet ve mobil cihazlarda sorunsuz bir şekilde görüntülenebilmelidir.
+* **SEO Dostu:** Arama motorları tarafından kolayca indekslenebilmesi için temel SEO optimizasyonları yapılmalıdır.
+* **Hız Optimizasyonu:** Sayfalar hızlı yüklenmeli ve kullanıcı deneyimini olumsuz etkileyecek gecikmeler olmamalıdır.
+* **Erişilebilirlik (Accessibility):** Engelli kullanıcıların da siteyi rahatça kullanabilmesi için temel erişilebilirlik standartlarına uyulmalıdır.
+
+---
+
+### **3. Teknik Gereksinimler**
+
+#### **3.1. Geliştirme Ortamı**
+* **Frontend:** React, Vue.js, Angular gibi modern bir JavaScript framework'ü veya Next.js, Gatsby gibi bir static site generator kullanılabilir.
+* **Backend:** Gerekli değil, ancak blog özelliği için bir CMS (ör. Strapi, Sanity) düşünülebilir. Aksi halde tamamen statik bir site olabilir.
+* **Veritabanı:** Gerekli değil.
+* **Hosting:** Netlify, Vercel, GitHub Pages gibi ücretsiz veya düşük maliyetli hosting servisleri.
+
+#### **3.2. Versiyon Kontrolü**
+* Proje, **Git** kullanılarak versiyon kontrolü altında tutulacaktır.
+* Kod deposu (repository) olarak **GitHub** kullanılacaktır.
+
+#### **3.3. Tasarım ve Kullanıcı Deneyimi (UX/UI)**
+* Profesyonel ve minimalist bir tasarım tercih edilmelidir.
+* Renk paleti, yazı tipleri ve düzen, kişisel marka kimliğine uygun olmalıdır.
+* Kullanıcıların aradıkları bilgiye hızlıca ulaşmasını sağlayan sezgisel bir navigasyon yapısı kurulmalıdır.
+
+#### **3.4. Geliştirici Notları**
+* **Kod Kalitesi:** Temiz, okunabilir ve bakımı kolay kod yazmaya özen gösterilmelidir.
+* **Testler:** Projenin kritik bileşenleri için temel birim veya entegrasyon testleri (ör. Jest, React Testing Library) yazılması önerilir.
+* **Bağımlılıklar:** Proje bağımlılıkları (`package.json`) düzenli tutulmalı ve güvendiğiniz kütüphaneler kullanılmalıdır.
+* **Deploy Süreci:** Otomatik build ve deploy süreçleri (Continuous Integration/Continuous Deployment - CI/CD) kurulmalıdır.
+
+---
+
+### **4. Proje Takvimi ve Sorumluluklar**
+
+* **Tasarım ve Planlama:** 1 hafta
+* **Frontend Geliştirme (Temel Sayfalar):** 2 hafta
+* **Blog/CMS Entegrasyonu (Opsiyonel):** 1 hafta
+* **Test ve Hata Ayıklama:** 1 hafta
+* **Yayına Alma ve Optimizasyon:** 1 hafta
+
+Bu PRD, projenin ilk aşaması için bir yol haritası sunar. Geliştirme sürecinde yeni fikirler eklenebilir veya mevcut gereksinimler revize edilebilir. Bu belgeyi bir başlangıç noktası olarak kullanarak kendi web sitenizin gelişimine başlayabilirsiniz.
