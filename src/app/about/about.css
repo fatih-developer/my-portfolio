@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 197 97% 47%;     /* Sky blue */
+    --primary-dark: 198 83% 39%;
+    --secondary: 215 16% 47%;    /* Slate gray */
+    --accent: 38 92% 50%;       /* Amber */
+    --text-primary: 221 24% 15%;
+    --text-secondary: 215 16% 47%;
+    --background: 0 0% 100%;
+    --surface: 210 20% 98%;
+    --border: 214 15% 91%;
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 py-20 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-16;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .profile-image-container {
+    @apply relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary/20;
+  }
+  
+  .skill-progress-bar {
+    @apply w-full bg-secondary rounded-full h-2;
+  }
+  
+  .skill-progress-fill {
+    @apply bg-primary h-2 rounded-full;
+  }
+}
+
+/* Responsive breakpoints */
+@media (min-width: 640px) { /* sm */
+  .section-container {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .section-container {
+    @apply px-8 py-24;
+  }
+  
+  .profile-image-container {
+    @apply w-64 h-64;
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .section-container {
+    @apply px-10;
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .section-container {
+    @apply px-12;
+  }
+}
