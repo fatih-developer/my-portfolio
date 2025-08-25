@@ -47,7 +47,7 @@ describe('AboutPage Animations', () => {
   });
 
   it('renders PersonalSection with animation properties', () => {
-    render(<PersonalSection personal={aboutData.personal} />);
+    render(<PersonalSection personal={aboutData.personalDetails} />);
     
     expect(screen.getByText('Personal Insights')).toBeInTheDocument();
   });

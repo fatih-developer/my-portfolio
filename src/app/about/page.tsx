@@ -24,7 +24,7 @@ export default function AboutPage() {
         <HeroSection data={aboutData.personal} />
         <SkillsSection skills={aboutData.skills} />
         <ExperienceSection experience={aboutData.experience} />
-        <PersonalSection personal={aboutData.personal} />
+        <PersonalSection personal={aboutData.personalDetails} />
       </div>
     </div>
   );

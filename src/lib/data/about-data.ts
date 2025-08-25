@@ -11,7 +11,7 @@ export interface AboutData {
   };
   skills: SkillCategory[];
   experience: ExperienceData;
-  personal: PersonalData;
+  personalDetails: PersonalData;
 }
 
 export const aboutData: AboutData = {
@@ -73,7 +73,7 @@ export const aboutData: AboutData = {
       'Developed responsive UI components used by 100k+ daily users',
     ],
   },
-  personal: {
+  personalDetails: {
     interests: [
       'Open Source Contributions',
       'Technical Blogging',

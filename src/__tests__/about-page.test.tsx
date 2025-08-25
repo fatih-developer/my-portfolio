@@ -56,14 +56,14 @@ describe('AboutPage', () => {
   it('renders personal insights correctly', () => {
     render(<AboutPage />);
     
-    aboutData.personal.interests.forEach(interest => {
+    aboutData.personalDetails.interests.forEach(interest => {
       expect(screen.getByText(interest)).toBeInTheDocument();
     });
     
-    aboutData.personal.goals.forEach(goal => {
+    aboutData.personalDetails.goals.forEach(goal => {
       expect(screen.getByText(goal)).toBeInTheDocument();
     });
     
-    expect(screen.getByText(aboutData.personal.motivation)).toBeInTheDocument();
+    expect(screen.getByText(aboutData.personalDetails.motivation)).toBeInTheDocument();
   });
 });
