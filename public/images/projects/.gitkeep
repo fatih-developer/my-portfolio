@@ -1,0 +1,12 @@
+# This file keeps the projects images directory in git
+# Add project images here following the naming convention:
+# - project-name-hero.jpg (main project image)
+# - project-name-screenshot1.jpg (additional screenshots)
+# - project-name-mobile.jpg (mobile screenshots)
+# - etc.
+
+# Image guidelines:
+# - Use descriptive filenames
+# - Optimize images for web (WebP preferred)
+# - Include alt text in the data structure
+# - Recommended dimensions: 1200x630 for hero images
