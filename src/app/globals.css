@@ -76,6 +76,23 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  
+  /* Footer colors */
+  --footer-bg: #f8fafc;
+  --footer-border: #e5e7eb;
+  --footer-text-primary: #1f2937;
+  --footer-text-secondary: #6b7280;
+  --footer-text-muted: #9ca3af;
+  --footer-link: #4b5563;
+  --footer-link-hover: #3b82f6;
+  
+  /* Social media colors */
+  --linkedin: #0077b5;
+  --linkedin-hover: #005885;
+  --github: #333333;
+  --github-hover: #24292e;
+  --twitter: #1da1f2;
+  --twitter-hover: #0d8bd9;
 }
 
 .dark {
@@ -118,5 +135,70 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .footer {
+    @apply py-12 border-t bg-gray-50;
+  }
+  
+  .footer-content {
+    @apply grid gap-8 text-center;
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    .footer-content {
+      @apply grid-cols-[2fr_1fr_auto] gap-12 text-left items-center;
+    }
+    
+    .footer-social {
+      @apply justify-self-end;
+    }
+  }
+  
+  .footer-name {
+    @apply text-lg font-semibold text-gray-900 mb-1;
+  }
+  
+  .footer-tagline {
+    @apply text-sm text-gray-500 mb-4;
+  }
+  
+  .footer-nav-link {
+    @apply text-sm font-medium text-gray-600 transition-colors hover:text-blue-600;
+  }
+  
+  .footer-copyright {
+    @apply text-xs text-gray-500 text-center mt-6 pt-6 border-t border-gray-200;
+  }
+  
+  .social-icon {
+    @apply w-9 h-9 rounded-md flex items-center justify-center transition-all duration-200 bg-transparent text-gray-600 hover:text-white;
+  }
+  
+  .social-icon.linkedin:hover {
+    @apply bg-[#0077b5];
+  }
+  
+  .social-icon.github:hover {
+    @apply bg-[#333333];
+  }
+  
+  .social-icon.twitter:hover {
+    @apply bg-[#1da1f2];
+  }
+  
+  .tech-stack {
+    @apply flex flex-wrap items-center justify-center md:justify-start gap-1 text-xs text-gray-500 mt-2;
+  }
+  
+  .tech-stack-item {
+    @apply text-gray-600 hover:text-blue-600 transition-colors;
+  }
+  
+  .tech-stack-separator {
+    @apply mx-1 text-gray-400;
   }
 }
