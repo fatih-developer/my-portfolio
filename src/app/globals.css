@@ -152,7 +152,7 @@
 
 @layer components {
   .footer {
-    @apply py-12 border-t bg-gray-50;
+    @apply py-12 border-t;
   }
   
   .footer-content {
@@ -171,23 +171,23 @@
   }
   
   .footer-name {
-    @apply text-lg font-semibold text-gray-900 mb-1;
+    @apply text-lg font-semibold text-foreground mb-1;
   }
   
   .footer-tagline {
-    @apply text-sm text-gray-500 mb-4;
+    @apply text-sm text-muted-foreground mb-4;
   }
   
   .footer-nav-link {
-    @apply text-sm font-medium text-gray-600 transition-colors hover:text-blue-600;
+    @apply text-sm font-medium text-muted-foreground transition-colors hover:text-primary;
   }
   
   .footer-copyright {
-    @apply text-xs text-gray-500 text-center mt-6 pt-6 border-t border-gray-200;
+    @apply text-xs text-muted-foreground text-center mt-6 pt-6 border-t border-border;
   }
   
   .social-icon {
-    @apply w-9 h-9 rounded-md flex items-center justify-center transition-all duration-200 bg-transparent text-gray-600 hover:text-white;
+    @apply w-9 h-9 rounded-md flex items-center justify-center transition-all duration-200 bg-transparent text-muted-foreground hover:text-white;
   }
   
   .social-icon.linkedin:hover {
@@ -203,15 +203,15 @@
   }
   
   .tech-stack {
-    @apply flex flex-wrap items-center justify-center md:justify-start gap-1 text-xs text-gray-500 mt-2;
+    @apply flex flex-wrap items-center justify-center md:justify-start gap-1 text-xs text-muted-foreground mt-2;
   }
   
   .tech-stack-item {
-    @apply text-gray-600 hover:text-blue-600 transition-colors;
+    @apply text-muted-foreground hover:text-primary transition-colors;
   }
   
   .tech-stack-separator {
-    @apply mx-1 text-gray-400;
+    @apply mx-1 text-border;
   }
   
   /* Skills section styles */

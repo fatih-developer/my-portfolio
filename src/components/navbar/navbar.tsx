@@ -4,6 +4,7 @@ import Link from "next/link";
 import { navigation } from "@/lib/navigation";
 import { NavItem } from "@/components/navbar/nav-item";
 import { MobileNav } from "@/components/navbar/mobile-nav";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Navbar() {
   return (
@@ -23,8 +24,11 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Mobile Navigation */}
-        <MobileNav />
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          {/* Mobile Navigation */}
+          <MobileNav />
+        </div>
       </div>
     </header>
   );

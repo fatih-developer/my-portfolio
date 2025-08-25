@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigation } from "@/lib/navigation";
 import { NavItem } from "@/components/navbar/nav-item";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,9 @@ export function MobileNav() {
               {item.name}
             </NavItem>
           ))}
+          <div className="pt-4 border-t border-border">
+            <ThemeToggle />
+          </div>
         </nav>
       </SheetContent>
     </Sheet>
