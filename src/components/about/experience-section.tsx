@@ -4,12 +4,17 @@ import { motion } from 'framer-motion';
 import { ExperienceData } from '@/types/about';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface ExperienceSectionProps {
   experience: ExperienceData;
 }
 
 export function ExperienceSection({ experience }: ExperienceSectionProps) {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}
@@ -76,7 +81,7 @@ export function ExperienceSection({ experience }: ExperienceSectionProps) {
             </CardHeader>
             <CardContent>
               <ul className="space-y-4">
-                {experience.highlights.map((highlight, index) => (
+                {experience.highlights.slice(0, expanded ? experience.highlights.length : 3).map((highlight, index) => (
                   <motion.li
                     key={index}
                     initial={{ opacity: 0, y: 10 }}
@@ -90,6 +95,25 @@ export function ExperienceSection({ experience }: ExperienceSectionProps) {
                   </motion.li>
                 ))}
               </ul>
+              {experience.highlights.length > 3 && (
+                <div className="mt-4">
+                  <Button
+                    variant="ghost"
+                    onClick={() => setExpanded(!expanded)}
+                    className="w-full flex items-center justify-center gap-2"
+                  >
+                    {expanded ? (
+                      <>
+                        Show Less <ChevronUp className="w-4 h-4" />
+                      </>
+                    ) : (
+                      <>
+                        Show More <ChevronDown className="w-4 h-4" />
+                      </>
+                    )}
+                  </Button>
+                </div>
+              )}
             </CardContent>
           </Card>
         </motion.div>
