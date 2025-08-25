@@ -93,6 +93,12 @@
   --github-hover: #24292e;
   --twitter: #1da1f2;
   --twitter-hover: #0d8bd9;
+  
+  /* Proficiency colors */
+  --proficiency-beginner: #f59e0b;
+  --proficiency-intermediate: #3b82f6;
+  --proficiency-advanced: #8b5cf6;
+  --proficiency-expert: #10b981;
 }
 
 .dark {
@@ -127,6 +133,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  
+  /* Proficiency colors for dark mode */
+  --proficiency-beginner: #fbbf24;
+  --proficiency-intermediate: #60a5fa;
+  --proficiency-advanced: #a78bfa;
+  --proficiency-expert: #34d399;
 }
 
 @layer base {
@@ -200,5 +212,30 @@
   
   .tech-stack-separator {
     @apply mx-1 text-gray-400;
+  }
+  
+  /* Skills section styles */
+  .skill-card {
+    @apply transition-all duration-300;
+  }
+  
+  .skill-card:hover {
+    @apply shadow-lg;
+  }
+  
+  .skill-name {
+    @apply font-medium text-foreground transition-colors;
+  }
+  
+  .skill-card:hover .skill-name {
+    @apply text-primary;
+  }
+  
+  .proficiency-bar {
+    @apply w-full bg-secondary rounded-full h-2.5;
+  }
+  
+  .proficiency-fill {
+    @apply h-2.5 rounded-full transition-all duration-1000 ease-out;
   }
 }
